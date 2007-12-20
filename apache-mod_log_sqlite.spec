@@ -23,6 +23,7 @@ Requires:	apache-conf >= 2.0.55
 Requires:	apache >= 2.0.55
 BuildRequires:	apache-devel >= 2.0.55
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_log_sqlite is an apache logging module, which logs
