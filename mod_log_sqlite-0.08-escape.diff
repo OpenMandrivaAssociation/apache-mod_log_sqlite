@@ -1,0 +1,13 @@
+--- mod_log_sqlite.c	2002-05-07 04:02:22.000000000 +0200
++++ mod_log_sqlite.c.oden	2003-09-10 02:24:03.000000000 +0200
+@@ -228,8 +228,8 @@
+   /* using '%q' would lead to '(NULL)', thus I use my own quote() function */
+   ret = sqlite_exec_printf(
+     conf->db,
+-    "INSERT INTO %s
+-    (remote_host, remote_user, request_uri, virtual_host, time_stamp, status, bytes_sent, referer, agent, request_method, request_protocol)
++    "INSERT INTO %s \
++    (remote_host, remote_user, request_uri, virtual_host, time_stamp, status, bytes_sent, referer, agent, request_method, request_protocol) \
+     VALUES (%s,%s,%s,%s,%i,%i,%i,%s,%s,%s,%s)",
+     NULL, NULL, &sqliteErr,
+     conf->table,
