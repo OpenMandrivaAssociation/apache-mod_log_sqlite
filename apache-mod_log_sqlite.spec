@@ -9,7 +9,7 @@ Version:	0.08
 Release:	%mkrel 16
 Group:		System/Servers
 License:	Apache License
-URL:		http://sourceforge.net/projects/modlogsqlite/
+URL:		https://sourceforge.net/projects/modlogsqlite/
 Source0: 	%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_log_sqlite-0.08-escape.diff
