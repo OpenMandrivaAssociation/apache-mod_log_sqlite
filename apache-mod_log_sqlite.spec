@@ -6,7 +6,7 @@
 Summary:	Sqlite logging module for the apache web server
 Name:		apache-%{mod_name}
 Version:	0.08
-Release:	%mkrel 16
+Release:	17
 Group:		System/Servers
 License:	Apache License
 URL:		https://sourceforge.net/projects/modlogsqlite/
